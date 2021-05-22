@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
-
+  constructor(private loadingController: LoadingController) { }
+  async consultar() {
+    const loading = await this.loadingController.create({
+      message: 'Cargando...',
+      duration: 3000
+    })
+    await loading.present();
+  }
 }

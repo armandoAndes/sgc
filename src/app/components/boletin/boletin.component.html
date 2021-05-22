@@ -1,0 +1,34 @@
+<ion-row>
+  <ion-col>
+    <ion-card>
+      <img [src]="publicacion.image" />
+      <ion-card-header>
+        <ion-card-subtitle  class="container">
+          {{publicacion.subtitle | date:'medium'}}
+        </ion-card-subtitle>
+        <ion-card-title  class="container">
+          Ciudad: {{publicacion.title}}
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-row>
+          <ion-col class="container" size="6">
+            <ion-chip color="danger">
+              <ion-label color="dark">Magnitud: {{publicacion.magnitud}}</ion-label>
+            </ion-chip>
+          </ion-col>
+          <ion-col class="container" size="6">
+            <ion-chip color="warning">
+              <ion-label color="dark">Profundidad: {{publicacion.profundida}}</ion-label>
+            </ion-chip>
+          </ion-col>
+          <ion-col class="container" size="12">
+            <ion-chip color="success">
+              <ion-label color="dark"> Localización: {{publicacion.localizacion}}</ion-label>
+            </ion-chip>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-col>
+</ion-row>
