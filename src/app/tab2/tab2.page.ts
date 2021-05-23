@@ -16,7 +16,7 @@ export class Tab2Page {
     this.http.get(environment.http.getAll)
       .subscribe((res: any) => {
         console.log("BOLETINES", res)
-        this.publicaciones = res.map(item => {
+        this.publicaciones = res.filter(item => {
           if (item !== null || item !== undefined || item!=="null") {
             return item;
           }
