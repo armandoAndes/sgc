@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
         subtitle: new Date().toDateString(),
         title: 'Madison, WI',
         magnitud: '2.1 M',
-        profundida: '66 km',
+        profundidad: '66 km',
         localizacion: 'Latitud: 1, Longitud -1',
         content: 'Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.'
       },
@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
         subtitle: new Date().toDateString(),
         title: 'Madison, WI',
         magnitud: '2.1 M',
-        profundida: '66 km',
+        profundidad: '66 km',
         localizacion: 'Latitud: 1, Longitud -1',
         content: 'Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.'
       },
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
         subtitle: new Date().toDateString(),
         title: 'Madison, WI',
         magnitud: '2.1 M',
-        profundida: '66 km',
+        profundidad: '66 km',
         localizacion: 'Latitud: 1, Longitud -1',
         content: 'Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.'
       },
@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
         subtitle: new Date().toDateString(),
         title: 'Madison, WI',
         magnitud: '2.1 M',
-        profundida: '66 km',
+        profundidad: '66 km',
         localizacion: 'Latitud: 1, Longitud -1',
         content: 'Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.'
       },
@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
         subtitle: new Date().toDateString(),
         title: 'Madison, WI',
         magnitud: '2.1 M',
-        profundida: '66 km',
+        profundidad: '66 km',
         localizacion: 'Latitud: 1, Longitud -1',
         content: 'Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.'
       },
