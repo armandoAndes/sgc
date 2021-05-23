@@ -15,11 +15,13 @@ export class Tab2Page {
   getBoletines() {
     this.http.get(environment.http.getAll)
       .subscribe((res: any) => {
+        console.log("BOLETINES", res)
         this.publicaciones = res.map(item => {
           if (item !== null || item !== undefined) {
             return item;
           }
         });
+        console.log("BOLETINES DESPUES", this.publicaciones)
       }, err => {
         alert("ERROR" + err);
       });
