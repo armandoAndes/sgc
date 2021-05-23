@@ -23,7 +23,7 @@
       <ion-button class="container" (click)="consultar()">Consultar</ion-button>
     </ion-col>
   </ion-row>
-  <ion-row [hidden]="!state">
+  <ion-row *ngIf="state">
     <ion-col size="10" push="1" style="border: 2px solid black;">
       <app-boletin [publicacion]="item"></app-boletin>
     </ion-col>
