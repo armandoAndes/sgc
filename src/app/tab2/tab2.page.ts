@@ -17,7 +17,7 @@ export class Tab2Page {
       .subscribe((res: any) => {
         console.log("BOLETINES", res)
         this.publicaciones = res.map(item => {
-          if (item !== null || item !== undefined) {
+          if (item !== null || item !== undefined || item!=="null") {
             return item;
           }
         });
