@@ -11,6 +11,7 @@ import { HttpService } from '../service/http.service';
 export class Tab1Page {
   public item: any;
   public state = false;
+  public data: any;
   constructor(private loadingController: LoadingController, private http: HttpService) { }
   async consultar() {
     const loading = await this.loadingController.create({

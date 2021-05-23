@@ -14,7 +14,7 @@
   </ion-header>
   <ion-row style="margin-top: 50px;">
     <ion-col size="4" push="4">
-      <app-input [info]="{placeholder: 'Digite la ciudad a consultar'}"></app-input>
+      <app-input (emitInput)="data = $event" [info]="{placeholder: 'Digite la ciudad a consultar'}"></app-input>
     </ion-col>
 
   </ion-row>
