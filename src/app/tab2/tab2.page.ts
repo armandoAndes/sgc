@@ -23,7 +23,7 @@ export class Tab2Page {
         });
         console.log("BOLETINES DESPUES", this.publicaciones)
       }, err => {
-        alert("ERROR" + err);
+        console.log("ERROR" + err);
       });
   }
 }

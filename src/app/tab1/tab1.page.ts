@@ -19,13 +19,13 @@ export class Tab1Page {
       duration: 3000
     })
     await loading.present();
-    this.http.post(environment.http.consulta, 1)
+    this.http.post(environment.http.consulta, this.data)
       .subscribe(res => {
         this.state = true;
         console.log("CONSULTA", res)
         this.item = res;
       }, err => {
-        alert("ERROR" + err)
+        console.log("ERROR" + err)
       })
   }
 }
