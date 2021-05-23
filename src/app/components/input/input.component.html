@@ -2,7 +2,7 @@
   <ion-col>
     <ion-item>
       <ion-label class="container" position="floating">{{info.placeholder}}</ion-label>
-      <ion-input [placeholder]="info.placeholder" type='text' (ionInput)="emit()" [(ngModel)]="data"></ion-input>
+      <ion-input [placeholder]="info.placeholder" type='text' (ionChange)="emit()" [(ngModel)]="data"></ion-input>
     </ion-item>
   </ion-col>
 </ion-row>

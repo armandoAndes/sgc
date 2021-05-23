@@ -28,4 +28,7 @@ export class Tab1Page {
         console.log("ERROR" + err)
       })
   }
+  test(data){
+    console.log("LLEGO DATA", data)
+  }
 }
