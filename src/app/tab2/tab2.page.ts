@@ -14,8 +14,12 @@ export class Tab2Page {
   }
   getBoletines() {
     this.http.get(environment.http.getAll)
-      .subscribe(res => {
-        this.publicaciones = res;
+      .subscribe((res: any) => {
+        this.publicaciones = res.map(item => {
+          if (item !== null || item !== undefined) {
+            return item;
+          }
+        });
       }, err => {
         alert("ERROR" + err);
       });
