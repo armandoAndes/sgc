@@ -19,7 +19,7 @@ export class Tab1Page {
       duration: 3000
     })
     await loading.present();
-    this.http.post(environment.http.consulta, this.data)
+    this.http.getC(environment.http.consulta, this.data)
       .subscribe(res => {
         this.state = true;
         console.log("CONSULTA", res)
